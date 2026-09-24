@@ -1,0 +1,774 @@
+/* Pretending to be Material Theme */
+
+/* ---Color Vars-------------------------------------   */
+:root {
+	/* MD3 Core & Surfaces */
+	--md-background: #{{background.hex}};
+	--md-onBackground: #{{onBackground.hex}};
+	--md-surface: #{{surface.hex}};
+	--md-surfaceDim: #{{surfaceDim.hex}};
+	--md-surfaceBright: #{{surfaceBright.hex}};
+	--md-surfaceContainerLowest: #{{surfaceContainerLowest.hex}};
+	--md-surfaceContainerLow: #{{surfaceContainerLow.hex}};
+	--md-surfaceContainer: #{{surfaceContainer.hex}};
+	--md-surfaceContainerHigh: #{{surfaceContainerHigh.hex}};
+	--md-surfaceContainerHighest: #{{surfaceContainerHighest.hex}};
+	--md-onSurface: #{{onSurface.hex}};
+	--md-surfaceVariant: #{{surfaceVariant.hex}};
+	--md-onSurfaceVariant: #{{onSurfaceVariant.hex}};
+	--md-outline: #{{outline.hex}};
+	--md-outlineVariant: #{{outlineVariant.hex}};
+	--md-inverseSurface: #{{inverseSurface.hex}};
+	--md-inverseOnSurface: #{{inverseOnSurface.hex}};
+	--md-shadow: #{{shadow.hex}};
+	--md-scrim: #{{scrim.hex}};
+	--md-surfaceTint: #{{surfaceTint.hex}};
+
+	/* MD3 Primary */
+	--md-primary: #{{primary.hex}};
+	--md-primaryDim: #{{primaryDim.hex}};
+	--md-onPrimary: #{{onPrimary.hex}};
+	--md-primaryContainer: #{{primaryContainer.hex}};
+	--md-onPrimaryContainer: #{{onPrimaryContainer.hex}};
+	--md-inversePrimary: #{{inversePrimary.hex}};
+	--md-primaryFixed: #{{primaryFixed.hex}};
+	--md-primaryFixedDim: #{{primaryFixedDim.hex}};
+	--md-onPrimaryFixed: #{{onPrimaryFixed.hex}};
+	--md-onPrimaryFixedVariant: #{{onPrimaryFixedVariant.hex}};
+
+	/* MD3 Secondary */
+	--md-secondary: #{{secondary.hex}};
+	--md-secondaryDim: #{{secondaryDim.hex}};
+	--md-onSecondary: #{{onSecondary.hex}};
+	--md-secondaryContainer: #{{secondaryContainer.hex}};
+	--md-onSecondaryContainer: #{{onSecondaryContainer.hex}};
+	--md-secondaryFixed: #{{secondaryFixed.hex}};
+	--md-secondaryFixedDim: #{{secondaryFixedDim.hex}};
+	--md-onSecondaryFixed: #{{onSecondaryFixed.hex}};
+	--md-onSecondaryFixedVariant: #{{onSecondaryFixedVariant.hex}};
+
+	/* MD3 Tertiary */
+	--md-tertiary: #{{tertiary.hex}};
+	--md-tertiaryDim: #{{tertiaryDim.hex}};
+	--md-onTertiary: #{{onTertiary.hex}};
+	--md-tertiaryContainer: #{{tertiaryContainer.hex}};
+	--md-onTertiaryContainer: #{{onTertiaryContainer.hex}};
+	--md-tertiaryFixed: #{{tertiaryFixed.hex}};
+	--md-tertiaryFixedDim: #{{tertiaryFixedDim.hex}};
+	--md-onTertiaryFixed: #{{onTertiaryFixed.hex}};
+	--md-onTertiaryFixedVariant: #{{onTertiaryFixedVariant.hex}};
+
+	/* MD3 Error & Success */
+	--md-error: #{{error.hex}};
+	--md-errorDim: #{{errorDim.hex}};
+	--md-onError: #{{onError.hex}};
+	--md-errorContainer: #{{errorContainer.hex}};
+	--md-onErrorContainer: #{{onErrorContainer.hex}};
+	--md-success: #{{success.hex}};
+	--md-onSuccess: #{{onSuccess.hex}};
+	--md-successContainer: #{{successContainer.hex}};
+	--md-onSuccessContainer: #{{onSuccessContainer.hex}};
+
+	/* MD3 Palette Key Colors */
+	--md-primaryPaletteKeyColor: #{{primaryPaletteKeyColor.hex}};
+	--md-secondaryPaletteKeyColor: #{{secondaryPaletteKeyColor.hex}};
+	--md-tertiaryPaletteKeyColor: #{{tertiaryPaletteKeyColor.hex}};
+	--md-neutralPaletteKeyColor: #{{neutralPaletteKeyColor.hex}};
+	--md-neutralVariantPaletteKeyColor: #{{neutralVariantPaletteKeyColor.hex}};
+	--md-errorPaletteKeyColor: #{{errorPaletteKeyColor.hex}};
+	--md-primary-paletteKeyColor: #{{primary_paletteKeyColor.hex}};
+	--md-secondary-paletteKeyColor: #{{secondary_paletteKeyColor.hex}};
+	--md-tertiary-paletteKeyColor: #{{tertiary_paletteKeyColor.hex}};
+	--md-neutral-paletteKeyColor: #{{neutral_paletteKeyColor.hex}};
+	--md-neutral-variant-paletteKeyColor: #{{neutral_variant_paletteKeyColor.hex}};
+
+	/* Terminal Palette */
+	--md-term0: #{{term0.hex}};
+	--md-term1: #{{term1.hex}};
+	--md-term2: #{{term2.hex}};
+	--md-term3: #{{term3.hex}};
+	--md-term4: #{{term4.hex}};
+	--md-term5: #{{term5.hex}};
+	--md-term6: #{{term6.hex}};
+	--md-term7: #{{term7.hex}};
+	--md-term8: #{{term8.hex}};
+	--md-term9: #{{term9.hex}};
+	--md-term10: #{{term10.hex}};
+	--md-term11: #{{term11.hex}};
+	--md-term12: #{{term12.hex}};
+	--md-term13: #{{term13.hex}};
+	--md-term14: #{{term14.hex}};
+	--md-term15: #{{term15.hex}};
+
+	/* Catppuccin / Extended Accent Palette */
+	--md-rosewater: #{{rosewater.hex}};
+	--md-flamingo: #{{flamingo.hex}};
+	--md-pink: #{{pink.hex}};
+	--md-mauve: #{{mauve.hex}};
+	--md-red: #{{red.hex}};
+	--md-maroon: #{{maroon.hex}};
+	--md-peach: #{{peach.hex}};
+	--md-yellow: #{{yellow.hex}};
+	--md-green: #{{green.hex}};
+	--md-teal: #{{teal.hex}};
+	--md-sky: #{{sky.hex}};
+	--md-sapphire: #{{sapphire.hex}};
+	--md-blue: #{{blue.hex}};
+	--md-lavender: #{{lavender.hex}};
+
+	/* KDE / System State Tokens */
+	--md-klink: #{{klink.hex}};
+	--md-klinkSelection: #{{klinkSelection.hex}};
+	--md-kvisited: #{{kvisited.hex}};
+	--md-kvisitedSelection: #{{kvisitedSelection.hex}};
+	--md-knegative: #{{knegative.hex}};
+	--md-knegativeSelection: #{{knegativeSelection.hex}};
+	--md-kneutral: #{{kneutral.hex}};
+	--md-kneutralSelection: #{{kneutralSelection.hex}};
+	--md-kpositive: #{{kpositive.hex}};
+	--md-kpositiveSelection: #{{kpositiveSelection.hex}};
+
+	/* Base UI & Layers */
+	--md-text: #{{text.hex}};
+	--md-subtext1: #{{subtext1.hex}};
+	--md-subtext0: #{{subtext0.hex}};
+	--md-overlay2: #{{overlay2.hex}};
+	--md-overlay1: #{{overlay1.hex}};
+	--md-overlay0: #{{overlay0.hex}};
+	--md-surface2: #{{surface2.hex}};
+	--md-surface1: #{{surface1.hex}};
+	--md-surface0: #{{surface0.hex}};
+	--md-base: #{{base.hex}};
+	--md-mantle: #{{mantle.hex}};
+	--md-crust: #{{crust.hex}};
+}
+
+.theme-dark,
+.theme-light {
+	/* --Core Background Surfaces -------------------------------*/
+	--background-primary: var(--md-background);
+	--background-primary-alt: var(--md-surfaceDim);
+	--background-secondary: var(--md-surfaceContainerLow);
+	--background-secondary-alt: var(--md-surfaceContainer);
+	--background-modifier-form-field: var(--md-surfaceContainerHigh);
+
+	/* --MD3 Surface Tonal Palette ------------------------------*/
+	--md-sys-color-surface: var(--md-surface);
+	--md-sys-color-surface-dim: var(--md-surfaceDim);
+	--md-sys-color-surface-bright: var(--md-surfaceBright);
+	--md-sys-color-surface-container-lowest: var(--md-surfaceContainerLowest);
+	--md-sys-color-surface-container-low: var(--md-surfaceContainerLow);
+	--md-sys-color-surface-container: var(--md-surfaceContainer);
+	--md-sys-color-surface-container-high: var(--md-surfaceContainerHigh);
+	--md-sys-color-surface-container-highest: var(--md-surfaceContainerHighest);
+	--md-sys-color-on-surface: var(--md-onSurface);
+	--md-sys-color-on-surface-variant: var(--md-onSurfaceVariant);
+	--md-sys-color-outline: var(--md-outline);
+	--md-sys-color-outline-variant: var(--md-outlineVariant);
+
+	/* --Titlebar & Window Controls ----------------------------*/
+	--titlebar-background: var(--md-surfaceContainerLow);
+	--titlebar-background-focused: var(--md-surfaceContainer);
+	--titlebar-text-color: var(--md-onSurface);
+	--titlebar-text-color-focused: var(--md-onSurface);
+
+	/* --Borders & Dividers ------------------------------------*/
+	--divider-color: var(--md-outlineVariant);
+	--background-modifier-border: var(--md-outlineVariant);
+	--background-modifier-border-focus: var(--md-primary);
+	--background-modifier-border-hover: var(--md-outline);
+
+	/* --Text Typography Colors --------------------------------*/
+	--text-normal: var(--md-onSurface);
+	--text-muted: var(--md-onSurfaceVariant);
+	--text-faint: var(--md-outline);
+	--text-on-accent: var(--md-onPrimary);
+	--text-selection: color-mix(in srgb, var(--md-primary) 30%, transparent);
+
+	/* --Accents & State Colors --------------------------------*/
+	--interactive-accent: var(--md-primary);
+	--interactive-accent-hover: var(--md-primaryContainer);
+	--interactive-accent-rgb: var(--md-primary);
+	--text-accent: var(--md-primary);
+	--text-accent-hover: var(--md-primaryContainer);
+
+	/* --Base Obsidian Gray/Scale Override ---------------------*/
+	--color-base-00: var(--md-background);
+	--color-base-05: var(--md-surfaceDim);
+	--color-base-10: var(--md-surfaceContainerLowest);
+	--color-base-20: var(--md-surfaceContainerLow);
+	--color-base-25: var(--md-surfaceContainer);
+	--color-base-30: var(--md-surfaceContainerHigh);
+	--color-base-35: var(--md-surfaceContainerHighest);
+	--color-base-40: var(--md-outlineVariant);
+	--color-base-50: var(--md-outline);
+	--color-base-60: var(--md-onSurfaceVariant);
+	--color-base-70: var(--md-onSurface);
+	--color-base-100: var(--md-inverseSurface);
+
+	/* --Semantic Palette --------------------------------------*/
+	--color-red: var(--md-error);
+	--color-orange: var(--md-tertiary);
+	--color-yellow: var(--md-secondary);
+	--color-green: var(--md-tertiaryContainer);
+	--color-cyan: var(--md-secondaryContainer);
+	--color-blue: var(--md-primary);
+	--color-purple: var(--md-secondary);
+
+	/* --MD3 Elevational Shadows -------------------------------*/
+	--shadow-level-1:
+		0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+	--shadow-level-2:
+		0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+	--shadow-level-3:
+		0px 4px 8px 3px rgba(0, 0, 0, 0.15), 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
+	--shadow-level-4:
+		0px 6px 10px 4px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+	--shadow-level-5:
+		0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+
+	/*Headings*/
+	--h1-color: var(--md-primary);
+	--h2-color: var(--md-tertiary);
+	--h3-color: var(--md-secondary);
+	--h4-color: var(--md-tertiary);
+	--h5-color: var(--md-onSurfaceVariant);
+	--h6-color: var(--md-outline);
+
+	/*Border Radius*/
+	--radius-s: 4px;
+	--radius-m: 8px;
+	--radius-l: 12px;
+	--radius-xl: 16px;
+	--radius-2xl: 28px;
+	--radius-full: 9999px;
+
+	/*Easing transition*/
+	--md-transition: all 200ms cubic-bezier(0.2, 0, 0, 1);
+
+	/*why do i have to state the obvious?*/
+	--dropdown-background: var(--md-primary);
+	--dropdown-background-hover: var(--md-tertiary);
+
+	/*-Code Blocks & Syntax highlight */
+	--code-background: var(--md-surfaceContainerLow);
+	--code-normal: var(--md-onSurface);
+	--code-comment: var(--md-onSurfaceVariant);
+	--code-function: var(--md-term4);
+	--code-important: var(--md-error);
+	--code-keyword: var(--md-term5);
+	--code-operator: var(--md-term3);
+	--code-property: var(--md-term6);
+	--code-punctuation: var(--md-onSurfaceVariant);
+	--code-string: var(--md-tertiary);
+	--code-tag: var(--md-error);
+	--code-value: var(--md-onSurface);
+
+	/*Canvas*/
+	--canvas-background: var(--md-surfaceContainer);
+	--canvas-card-label-color: var(--md-tertiary);
+	--canvas-dot-pattern: var(--md-onSurface);
+}
+
+/*App layout and navigation panel*/
+/* Left Ribbon (Dock) */
+.side-dock-ribbon {
+	background-color: var(--md-surfaceContainerLow) !important;
+	border-right: 1px solid var(--md-outlineVariant);
+}
+
+.side-dock-ribbon-action {
+	border-radius: var(--radius-2xl) !important;
+	padding: 8px !important;
+	transition: var(--md-transition);
+	color: var(--md-onSurfaceVariant);
+}
+
+.side-dock-ribbon-action:hover {
+	background-color: color-mix(
+		in srgb,
+		var(--md-onSurface) 8%,
+		transparent
+	) !important;
+	color: var(--md-onSurface);
+}
+
+.side-dock-ribbon-action.is-active {
+	background-color: var(--md-primaryContainer) !important;
+	color: var(--md-onPrimaryContainer) !important;
+}
+
+/* Sidebar Trees & File Nav */
+.workspace-ribbon,
+.workspace-split.mod-left-split,
+.workspace-split.mod-right-split {
+	background-color: var(--md-surfaceContainerLow);
+}
+
+.nav-file-title,
+.nav-folder-title {
+	border-radius: var(--radius-full) !important;
+	margin-bottom: 2px !important;
+	padding: 6px 16px !important;
+	color: var(--md-onSurfaceVariant);
+	transition: var(--md-transition);
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover {
+	background-color: color-mix(
+		in srgb,
+		var(--md-onSurface) 8%,
+		transparent
+	) !important;
+	color: var(--md-onSurface);
+}
+
+.nav-file-title.is-active {
+	background-color: var(--md-secondaryContainer) !important;
+	color: var(--md-onSecondaryContainer) !important;
+	font-weight: 600;
+}
+
+/* Workspace Tabs */
+.workspace-tab-header-container {
+	background-color: var(--md-surfaceContainerLow);
+	border-bottom: 1px solid var(--md-outlineVariant);
+}
+
+.workspace-tab-header {
+	border-width: 0 !important;
+	border-radius: 0 0 0 0 !important;
+	transition: var(--md-transition);
+	color: var(--md-onSurfaceVariant);
+}
+
+.workspace-tab-header.is-active {
+	background-color: var(--md-surfaceContainerLow) !important;
+	color: var(--md-primary) !important;
+	border-bottom: 3px solid var(--md-primary) !important;
+}
+
+.workspace-tab-header:hover:not(.is-active) {
+	background-color: color-mix(in srgb, var(--md-onSurface) 6%, transparent);
+}
+
+/*editor and typography*/
+.markdown-source-view,
+.markdown-rendered {
+	background-color: var(--md-background);
+	font-family:
+		Roboto,
+		system-ui,
+		-apple-system,
+		sans-serif;
+}
+
+/* cursor & line highlight */
+.cm-cursor {
+	border-left-color: var(--md-primary) !important;
+	border-left-width: 2.5px !important;
+}
+
+.cm-active {
+	background-color: color-mix(
+		in srgb,
+		var(--md-onSurface) 4%,
+		transparent
+	) !important;
+}
+
+.cm-selectionBackground,
+::selection {
+	background-color: color-mix(
+		in srgb,
+		var(--md-primary) 30%,
+		transparent
+	) !important;
+}
+
+/* Links & Tags */
+.cm-underline,
+.markdown-rendered a {
+	color: var(--md-primary);
+	text-decoration-color: var(--md-primary);
+	transition: var(--md-transition);
+}
+
+.markdown-rendered a:hover {
+	color: var(--md-onPrimaryContainer);
+	background-color: var(--md-primaryContainer);
+	border-radius: var(--radius-s);
+}
+
+a.tag,
+.cm-hashtag {
+	background-color: var(--md-secondaryContainer) !important;
+	color: var(--md-onSecondaryContainer) !important;
+	border-radius: var(--radius-m) !important;
+	padding: 2px 8px !important;
+	border: none !important;
+	font-weight: 500;
+}
+
+/* code blocks again*/
+.markdown-rendered code,
+.cm-inline-code {
+	border-radius: var(--radius-s) !important;
+	padding: 2px 6px !important;
+	border: 1px solid var(--md-outlineVariant) !important;
+}
+
+.markdown-rendered pre {
+	background-color: var(--md-surfaceContainerLow) !important;
+	border-radius: var(--radius-l) !important;
+	border: 1px solid var(--md-outlineVariant) !important;
+	padding: 16px !important;
+	box-shadow: var(--shadow-level-1) !important;
+}
+
+/* tasks & checkboxes */
+.contains-task-list input[type='checkbox'] {
+	appearance: none;
+	-webkit-appearance: none;
+	width: 18px;
+	height: 18px;
+	border: 2px solid var(--md-outline);
+	border-radius: var(--radius-s);
+	transition: var(--md-transition);
+	cursor: pointer;
+	position: relative;
+	vertical-align: middle;
+}
+
+.contains-task-list input[type='checkbox']:checked {
+	background-color: var(--md-primary);
+	border-color: var(--md-primary);
+}
+
+.contains-task-list input[type='checkbox']:checked::after {
+	content: '✓';
+	color: var(--md-onPrimary);
+	position: absolute;
+	font-size: 12px;
+	top: -2px;
+	left: 3px;
+	font-weight: bold;
+}
+
+/*modal ,popups,etc*/
+.modal {
+	background-color: var(--md-surfaceContainerHigh) !important;
+	border-radius: var(--radius-2xl) !important;
+	box-shadow: var(--shadow-level-3) !important;
+	border: 1px solid var(--md-outlineVariant) !important;
+	padding: 24px !important;
+}
+
+.modal-bg {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	backdrop-filter: blur(4px);
+}
+
+/* quick switcher/command palette */
+.suggestion-item {
+	border-radius: var(--radius-full) !important;
+	padding: 10px 20px !important;
+	margin: 2px 0 !important;
+	color: var(--md-onSurfaceVariant) !important;
+}
+
+.suggestion-item.is-selected {
+	background-color: var(--md-secondaryContainer) !important;
+	color: var(--md-onSecondaryContainer) !important;
+}
+
+.prompt-input {
+	background-color: var(--md-surfaceContainerLowest) !important;
+	border: 1px solid var(--md-outline) !important;
+	border-radius: var(--radius-full) !important;
+	padding: 12px 20px !important;
+	color: var(--md-onSurface) !important;
+}
+
+.prompt-input:focus {
+	border-color: var(--md-primary) !important;
+	box-shadow: 0 0 0 2px color-mix(in srgb, var(--md-primary) 20%, transparent) !important;
+}
+
+/*Callouts*/
+.callout {
+	border-radius: var(--radius-xl) !important;
+	border: 1px solid var(--md-outlineVariant) !important;
+	background-color: var(--md-surfaceContainerLow) !important;
+	box-shadow: var(--shadow-level-1);
+	padding: 16px !important;
+	margin: 1em 0 !important;
+}
+
+.callout-title {
+	font-weight: 600;
+	color: var(--md-onSurface);
+}
+
+.callout[data-callout='note'] {
+	background-color: var(--md-secondaryContainer) !important;
+	--callout-color: var(--md-secondary);
+	color: var(--md-onSecondaryContainer);
+}
+
+.callout[data-callout='warning'],
+.callout[data-callout='danger'] {
+	background-color: var(--md-errorContainer) !important;
+	--callout-color: var(--md-error);
+	color: var(--md-onErrorContainer);
+}
+
+.callout[data-callout='success'] {
+	background-color: var(--md-tertiaryContainer) !important;
+	--callout-color: var(--md-tertiary);
+	color: var(--md-onTertiaryContainer);
+}
+
+.popover.hover-popover {
+	--callout-blend-mode: transparent;
+	justify-content: stretch;
+	overflow: hidden;
+	max-width: 80vw;
+	max-height: inherit;
+	min-height: 30px;
+	width: fit-content;
+}
+
+/* Buttons */
+button,
+.mod-cta {
+	border-radius: var(--radius-full) !important;
+	padding: 8px 24px !important;
+	font-weight: 500 !important;
+	transition: var(--md-transition) !important;
+	border: none !important;
+	background-color: var(--md-primary) !important;
+	color: var(--md-onPrimary) !important;
+	box-shadow: var(--shadow-level-1);
+}
+
+button:hover,
+.mod-cta:hover {
+	box-shadow: var(--shadow-level-2);
+	background-color: color-mix(
+		in srgb,
+		var(--md-primary) 90%,
+		black
+	) !important;
+}
+
+button:active {
+	box-shadow: var(--shadow-level-1);
+}
+
+/* toggle track & centered thumb */
+.checkbox-container {
+	position: relative !important;
+	width: 44px !important;
+	height: 24px !important;
+	min-height: 24px !important;
+	border-radius: 999px !important;
+	background-color: var(--md-surfaceContainerHighest) !important;
+	border: 2px solid var(--md-outline) !important;
+	box-sizing: border-box !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	cursor: pointer;
+}
+
+.checkbox-container.is-enabled {
+	background-color: var(--md-primary) !important;
+	border-color: var(--md-primary) !important;
+}
+
+/* OFF State Thumb */
+.checkbox-container .checkbox-thumb {
+	position: relative !important;
+	width: 12px !important;
+	height: 12px !important;
+	border-radius: 50% !important;
+	background-color: var(--md-outline) !important;
+	transform: translateY(-50%) !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	transition: var(--md-transition) !important;
+}
+
+/* ON State Thumb */
+.checkbox-container.is-enabled .checkbox-thumb {
+	background-color: var(--md-onPrimary) !important;
+	transform: translate(20px, -50%) !important;
+}
+
+/*Canvas*/
+.canvas-node {
+	border-radius: var(--radius-xl) !important;
+	border: 1px solid var(--md-outlineVariant) !important;
+	box-shadow: var(--shadow-level-2) !important;
+}
+
+.canvas-node-content {
+	border-radius: var(--radius-l) !important;
+}
+
+.graph-view-wrapper {
+	background-color: var(--md-background);
+}
+
+/*Status bar*/
+.status-bar {
+	background-color: var(--md-surfaceContainerLow) !important;
+	border-top: 1px solid var(--md-outlineVariant) !important;
+	color: var(--md-onSurfaceVariant) !important;
+	padding: 4px 16px !important;
+	border-radius: var(--radius-l) var(--radius-l) 0 0;
+}
+
+/* modal layout reset??? */
+.modal.mod-settings {
+	padding: 0 !important;
+	border-radius: var(--radius-2xl) !important;
+	background-color: var(--md-surface) !important;
+	overflow: hidden !important;
+}
+
+.modal.mod-settings .modal-content {
+	padding: 0 !important;
+	height: 100% !important;
+}
+
+.modal.mod-settings .vertical-tabs-container {
+	height: 100% !important;
+}
+
+/* Left Sidebar Navigation */
+.vertical-tab-header {
+	background-color: var(--md-surfaceContainerLow) !important;
+	border-right: 1px solid var(--md-outlineVariant) !important;
+	padding: 16px 12px !important;
+	width: 240px !important;
+}
+
+.vertical-tab-header-group-title {
+	color: var(--md-primary) !important;
+	font-size: 0.75rem !important;
+	font-weight: 700 !important;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	padding: 12px 12px 4px 12px !important;
+}
+
+.vertical-tab-nav-item {
+	border-radius: var(--radius-full) !important;
+	padding: 8px 16px !important;
+	margin-bottom: 2px !important;
+	color: var(--md-onSurfaceVariant) !important;
+	font-size: 0.9rem !important;
+	transition: var(--md-transition);
+}
+
+.vertical-tab-nav-item:hover {
+	background-color: color-mix(
+		in srgb,
+		var(--md-onSurface) 8%,
+		transparent
+	) !important;
+	color: var(--md-onSurface) !important;
+}
+
+.vertical-tab-nav-item.is-active {
+	background-color: var(--md-secondaryContainer) !important;
+	color: var(--md-onSecondaryContainer) !important;
+	font-weight: 600 !important;
+}
+
+/* Settings Content Panel */
+.vertical-tab-content-container {
+	background-color: var(--md-surface) !important;
+	padding: 24px 32px !important;
+}
+
+.vertical-tab-content {
+	padding-right: 8px !important;
+}
+
+/* Individual Setting Item Rows */
+.setting-item {
+	border-bottom: 1px solid var(--md-outlineVariant) !important;
+	border-radius: 0 !important;
+	padding: 14px 0 !important;
+	margin: 0 !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+}
+
+.setting-item-control {
+	display: flex !important;
+	align-items: center !important;
+	gap: 8px !important;
+}
+
+.setting-item-heading {
+	border-bottom: none !important;
+	padding: 18px 0 6px 0 !important;
+}
+
+.setting-item-heading .setting-item-name {
+	font-size: 1rem !important;
+	font-weight: 700 !important;
+	color: var(--md-primary) !important;
+}
+
+.setting-item-name {
+	color: var(--md-onSurface) !important;
+	font-size: 0.92rem !important;
+	font-weight: 500 !important;
+}
+
+.setting-item-description {
+	color: var(--md-onSurfaceVariant) !important;
+	font-size: 0.82rem !important;
+	line-height: 1.35 !important;
+}
+
+/* Inputs, Select Dropdowns, & Control Overrides */
+.setting-item-control input[type='text'],
+.setting-item-control input[type='search'],
+.setting-item-control input[type='number'],
+.setting-item-control select.dropdown {
+	background-color: var(--md-tertiary) !important;
+	border: 1px solid var(--md-outline) !important;
+	color: var(--md-onSurface) !important;
+	border-radius: var(--radius-xl) !important;
+	padding: 0 42px 0 24px !important;
+	font-size: 0.85rem !important;
+	height: 36px !important;
+	transition: var(--md-transition);
+}
+
+.setting-item-control input[type='text']:focus,
+.setting-item-control select.dropdown:focus {
+	border-color: var(--md-primary) !important;
+	box-shadow: 0 0 0 2px color-mix(in srgb, var(--md-primary) 20%, transparent) !important;
+}
+
+/* Restrict generic button blowout inside settings */
+.setting-item-control button:not(.checkbox-container) {
+	padding: 6px 16px !important;
+	height: 36px !important;
+	font-size: 0.85rem !important;
+	border-radius: var(--radius-full) !important;
+	box-shadow: none !important;
+}
+
+/* Slider Bar Tweaks */
+.setting-item-control input[type='range'] {
+	accent-color: var(--md-primary) !important;
+}

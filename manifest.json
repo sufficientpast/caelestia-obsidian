@@ -1,0 +1,10 @@
+{
+	"id": "caelestia-test",
+	"name": "caelestia test plugin",
+	"version": "1.0.0",
+	"minAppVersion": "1.8.7",
+	"description": "A simple plugin to get dynamic colours from .",
+	"author": "that person",
+	"authorUrl": "https://obsidian.md",
+	"isDesktopOnly": true
+}

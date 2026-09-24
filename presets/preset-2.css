@@ -1,0 +1,303 @@
+/* Material You (Standard Token Format) Obsidian Snippet */
+
+:root {
+	/*  background and surface */
+	--md-background: #{{background.hex}};
+	--md-onBackground: #{{onBackground.hex}};
+	--md-surface: #{{surface.hex}};
+	--md-surfaceDim: #{{surfaceDim.hex}};
+	--md-surfaceBright: #{{surfaceBright.hex}};
+	--md-surfaceContainerLowest: #{{surfaceContainerLowest.hex}};
+	--md-surfaceContainerLow: #{{surfaceContainerLow.hex}};
+	--md-surfaceContainer: #{{surfaceContainer.hex}};
+	--md-surfaceContainerHigh: #{{surfaceContainerHigh.hex}};
+	--md-surfaceContainerHighest: #{{surfaceContainerHighest.hex}};
+	--md-onSurface: #{{onSurface.hex}};
+	--md-surfaceVariant: #{{surfaceVariant.hex}};
+	--md-onSurfaceVariant: #{{onSurfaceVariant.hex}};
+	--md-outline: #{{outline.hex}};
+	--md-outlineVariant: #{{outlineVariant.hex}};
+	--md-inverseSurface: #{{inverseSurface.hex}};
+	--md-inverseOnSurface: #{{inverseOnSurface.hex}};
+	--md-shadow: #{{shadow.hex}};
+	--md-scrim: #{{scrim.hex}};
+	--md-surfaceTint: #{{surfaceTint.hex}};
+
+	/* Primary */
+	--md-primary: #{{primary.hex}};
+	--md-primaryDim: #{{primaryDim.hex}};
+	--md-onPrimary: #{{onPrimary.hex}};
+	--md-primaryContainer: #{{primaryContainer.hex}};
+	--md-onPrimaryContainer: #{{onPrimaryContainer.hex}};
+	--md-inversePrimary: #{{inversePrimary.hex}};
+	--md-primaryFixed: #{{primaryFixed.hex}};
+	--md-primaryFixedDim: #{{primaryFixedDim.hex}};
+	--md-onPrimaryFixed: #{{onPrimaryFixed.hex}};
+	--md-onPrimaryFixedVariant: #{{onPrimaryFixedVariant.hex}};
+
+	/* Secondary */
+	--md-secondary: #{{secondary.hex}};
+	--md-secondaryDim: #{{secondaryDim.hex}};
+	--md-onSecondary: #{{onSecondary.hex}};
+	--md-secondaryContainer: #{{secondaryContainer.hex}};
+	--md-onSecondaryContainer: #{{onSecondaryContainer.hex}};
+	--md-secondaryFixed: #{{secondaryFixed.hex}};
+	--md-secondaryFixedDim: #{{secondaryFixedDim.hex}};
+	--md-onSecondaryFixed: #{{onSecondaryFixed.hex}};
+	--md-onSecondaryFixedVariant: #{{onSecondaryFixedVariant.hex}};
+
+	/* Tertiary */
+	--md-tertiary: #{{tertiary.hex}};
+	--md-tertiaryDim: #{{tertiaryDim.hex}};
+	--md-onTertiary: #{{onTertiary.hex}};
+	--md-tertiaryContainer: #{{tertiaryContainer.hex}};
+	--md-onTertiaryContainer: #{{onTertiaryContainer.hex}};
+	--md-tertiaryFixed: #{{tertiaryFixed.hex}};
+	--md-tertiaryFixedDim: #{{tertiaryFixedDim.hex}};
+	--md-onTertiaryFixed: #{{onTertiaryFixed.hex}};
+	--md-onTertiaryFixedVariant: #{{onTertiaryFixedVariant.hex}};
+
+	/* Error & Success */
+	--md-error: #{{error.hex}};
+	--md-errorDim: #{{errorDim.hex}};
+	--md-onError: #{{onError.hex}};
+	--md-errorContainer: #{{errorContainer.hex}};
+	--md-onErrorContainer: #{{onErrorContainer.hex}};
+	--md-success: #{{success.hex}};
+	--md-onSuccess: #{{onSuccess.hex}};
+	--md-successContainer: #{{successContainer.hex}};
+	--md-onSuccessContainer: #{{onSuccessContainer.hex}};
+
+	/* Palette Key Colors */
+	--md-primaryPaletteKeyColor: #{{primaryPaletteKeyColor.hex}};
+	--md-secondaryPaletteKeyColor: #{{secondaryPaletteKeyColor.hex}};
+	--md-tertiaryPaletteKeyColor: #{{tertiaryPaletteKeyColor.hex}};
+	--md-neutralPaletteKeyColor: #{{neutralPaletteKeyColor.hex}};
+	--md-neutralVariantPaletteKeyColor: #{{neutralVariantPaletteKeyColor.hex}};
+	--md-errorPaletteKeyColor: #{{errorPaletteKeyColor.hex}};
+	--md-primary-paletteKeyColor: #{{primary_paletteKeyColor.hex}};
+	--md-secondary-paletteKeyColor: #{{secondary_paletteKeyColor.hex}};
+	--md-tertiary-paletteKeyColor: #{{tertiary_paletteKeyColor.hex}};
+	--md-neutral-paletteKeyColor: #{{neutral_paletteKeyColor.hex}};
+	--md-neutral-variant-paletteKeyColor: #{{neutral_variant_paletteKeyColor.hex}};
+
+	/* Terminal Palette */
+	--md-term0: #{{term0.hex}};
+	--md-term1: #{{term1.hex}};
+	--md-term2: #{{term2.hex}};
+	--md-term3: #{{term3.hex}};
+	--md-term4: #{{term4.hex}};
+	--md-term5: #{{term5.hex}};
+	--md-term6: #{{term6.hex}};
+	--md-term7: #{{term7.hex}};
+	--md-term8: #{{term8.hex}};
+	--md-term9: #{{term9.hex}};
+	--md-term10: #{{term10.hex}};
+	--md-term11: #{{term11.hex}};
+	--md-term12: #{{term12.hex}};
+	--md-term13: #{{term13.hex}};
+	--md-term14: #{{term14.hex}};
+	--md-term15: #{{term15.hex}};
+
+	/* Catppuccin / Extended Accent Palette */
+	--md-rosewater: #{{rosewater.hex}};
+	--md-flamingo: #{{flamingo.hex}};
+	--md-pink: #{{pink.hex}};
+	--md-mauve: #{{mauve.hex}};
+	--md-red: #{{red.hex}};
+	--md-maroon: #{{maroon.hex}};
+	--md-peach: #{{peach.hex}};
+	--md-yellow: #{{yellow.hex}};
+	--md-green: #{{green.hex}};
+	--md-teal: #{{teal.hex}};
+	--md-sky: #{{sky.hex}};
+	--md-sapphire: #{{sapphire.hex}};
+	--md-blue: #{{blue.hex}};
+	--md-lavender: #{{lavender.hex}};
+
+	/* KDE / System State Tokens */
+	--md-klink: #{{klink.hex}};
+	--md-klinkSelection: #{{klinkSelection.hex}};
+	--md-kvisited: #{{kvisited.hex}};
+	--md-kvisitedSelection: #{{kvisitedSelection.hex}};
+	--md-knegative: #{{knegative.hex}};
+	--md-knegativeSelection: #{{knegativeSelection.hex}};
+	--md-kneutral: #{{kneutral.hex}};
+	--md-kneutralSelection: #{{kneutralSelection.hex}};
+	--md-kpositive: #{{kpositive.hex}};
+	--md-kpositiveSelection: #{{kpositiveSelection.hex}};
+
+	/* Base UI & Layers */
+	--md-text: #{{text.hex}};
+	--md-subtext1: #{{subtext1.hex}};
+	--md-subtext0: #{{subtext0.hex}};
+	--md-overlay2: #{{overlay2.hex}};
+	--md-overlay1: #{{overlay1.hex}};
+	--md-overlay0: #{{overlay0.hex}};
+	--md-surface2: #{{surface2.hex}};
+	--md-surface1: #{{surface1.hex}};
+	--md-surface0: #{{surface0.hex}};
+	--md-base: #{{base.hex}};
+	--md-mantle: #{{mantle.hex}};
+	--md-crust: #{{crust.hex}};
+}
+.theme-dark, .theme-light {
+  /* ── Core Backgrounds ─────────────────────── */
+    --background-primary:           var(--md-background);
+    --background-primary-alt:       var(--md-sys-color-surface-dim);
+    --background-secondary:         #{{surfaceContainerLow.hex}};
+    --background-secondary-alt:     #{{surfaceContainer.hex}};
+
+    /* ── Titlebar ─────────────────────────────── */
+    --titlebar-background:          #{{surfaceDim.hex}};
+    --titlebar-background-focused:  #{{surfaceContainerLow.hex}};
+    --titlebar-text-color:          #{{onSurface.hex}};
+
+    /* ── Borders & Dividers ───────────────────── */
+    --background-modifier-border:         #{{outlineVariant.hex}};
+    --background-modifier-border-focus:   #{{outline.hex}};
+    --background-modifier-border-hover:   #{{outline.hex}};
+
+    /* ── Text Colors ──────────────────────────── */
+    --text-normal:      #{{onSurface.hex}};
+    --text-muted:       #{{onSurfaceVariant.hex}};
+    --text-faint:       #{{outline.hex}};
+    --text-on-accent:   #{{onPrimary.hex}};
+    --text-selection:   color-mix(in srgb, {{primary.rgb}} 25%, transparent);
+
+    /* ── Accent & Interactive ─────────────────── */
+    --interactive-accent:           #{{primary.hex}};
+    --interactive-accent-hover:     #{{primaryContainer.hex}};
+    --interactive-accent-rgb:       {{primary.rgb}};
+    --text-accent:                  #{{primary.hex}};
+    --text-accent-hover:            #{{primaryContainer.hex}};
+
+    /* ── Hover & Active ───────────────────────── */
+    --background-modifier-hover:          color-mix(in srgb, {{onSurface.rgb}} 6%, transparent);
+    --background-modifier-active-hover:   color-mix(in srgb, {{primary.rgb}} 15%, transparent);
+    --background-modifier-success:        #{{tertiaryContainer.hex}};
+    --background-modifier-error:          #{{errorContainer.hex}};
+    --background-modifier-error-hover:    #{{error.hex}};
+
+    /* ── Obsidian Base Scale ──────────────────── */
+    --color-base-00:    #{{background.hex}};
+    --color-base-05:    #{{surfaceDim.hex}};
+    --color-base-10:    #{{surfaceContainerLowest.hex}};
+    --color-base-20:    #{{surfaceContainerLow.hex}};
+    --color-base-25:    #{{surfaceContainer.hex}};
+    --color-base-30:    #{{surfaceContainerHigh.hex}};
+    --color-base-35:    #{{surfaceContainerHighest.hex}};
+    --color-base-40:    #{{outlineVariant.hex}};
+    --color-base-50:    #{{outline.hex}};
+    --color-base-60:    #{{onSurfaceVariant.hex}};
+    --color-base-70:    #{{onSurface.hex}};
+    --color-base-100:   #{{inverseSurface.hex}};
+
+    /* ── Semantic Colors ──────────────────────── */
+    --color-red:        #{{error.hex}};
+    --color-orange:     #{{tertiary.hex}};
+    --color-yellow:     #{{secondary.hex}};
+    --color-green:      #{{tertiaryContainer.hex}};
+    --color-cyan:       #{{secondaryContainer.hex}};
+    --color-blue:       #{{primary.hex}};
+    --color-purple:     #{{secondary.hex}};
+    --color-pink:       #{{tertiary.hex}};
+
+    /* ── Headings ─────────────────────────────── */
+    --h1-color:     #{{primary.hex}};
+    --h2-color:     #{{primary.hex}};
+    --h3-color:     #{{secondary.hex}};
+    --h4-color:     #{{tertiary.hex}};
+    --h5-color:     #{{onSurfaceVariant.hex}};
+    --h6-color:     #{{outline.hex}};
+
+    /* ── Links ────────────────────────────────── */
+    --link-color:           #{{primary.hex}};
+    --link-color-hover:     #{{onPrimaryContainer.hex}};
+    --link-external-color:  #{{tertiary.hex}};
+    --link-unresolved-color: #{{outline.hex}};
+
+    /* ── Tags ─────────────────────────────────── */
+    --tag-color:            #{{onPrimaryContainer.hex}};
+    --tag-background:       #{{primaryContainer.hex}};
+    --tag-border-color:     #{{primary.hex}};
+    --tag-color-hover:      #{{onPrimary.hex}};
+    --tag-background-hover: #{{primary.hex}};
+
+    /* ── Checkboxes ───────────────────────────── */
+    --checkbox-color:           #{{primary.hex}};
+    --checkbox-color-hover:     #{{primaryContainer.hex}};
+    --checkbox-border-color:    #{{outline.hex}};
+    --checkbox-marker-color:    #{{onPrimary.hex}};
+
+    /* ── Code Blocks ──────────────────────────── */
+    --code-background:  #{{surfaceContainerLow.hex}};
+    --code-normal:      #{{onSurface.hex}};
+    --code-comment:     #{{outline.hex}};
+    --code-function:    #{{primary.hex}};
+    --code-important:   #{{error.hex}};
+    --code-keyword:     #{{secondary.hex}};
+    --code-operator:    #{{tertiary.hex}};
+    --code-property:    #{{onSurfaceVariant.hex}};
+    --code-punctuation: #{{outlineVariant.hex}};
+    --code-string:      #{{tertiary.hex}};
+    --code-tag:         #{{error.hex}};
+    --code-value:       #{{secondary.hex}};
+
+    /* ── Scrollbar ────────────────────────────── */
+    --scrollbar-thumb-bg:           color-mix(in srgb, {{onSurface.rgb}} 12%, transparent);
+    --scrollbar-active-thumb-bg:    color-mix(in srgb, {{onSurface.rgb}} 25%, transparent);
+    --scrollbar-bg:                 transparent;
+
+    /* ── Inputs ───────────────────────────────── */
+    --input-shadow: none;
+    --input-shadow-hover: 0 0 0 2px #{{outline.hex}};
+
+    /* ── Graph View ───────────────────────────── */
+    --graph-node:           #{{primary.hex}};
+    --graph-node-unresolved: #{{outline.hex}};
+    --graph-node-focused:   #{{onPrimaryContainer.hex}};
+    --graph-node-tag:       #{{secondary.hex}};
+    --graph-node-attachment: #{{tertiary.hex}};
+    --graph-line:           #{{outlineVariant.hex}};
+    --graph-background:     #{{background.hex}};
+
+    /* ── Scalable M3 Shape Tokens ── */
+    --m3-radius-none: 0;
+    --m3-radius-xs:   0.25rem; /* 4px  */
+    --m3-radius-s:    0.5rem;  /* 8px  */
+    --m3-radius-m:    0.75rem; /* 12px */
+    --m3-radius-l:    1rem;    /* 16px */
+    --m3-radius-xl:   1.75rem; /* 28px (The M3 "Big Round") */
+    --m3-radius-full: 99rem;   /* Infinite rounding for pills */
+}
+
+/* ── Active line highlight ───────────────────── */
+.cm-active {
+    background-color: color-mix( in srgb, var(--md-onTertiary) 3%, transparent) !important;
+}
+
+
+/* Sidebar File & Folder Styling */
+.nav-file-title,
+.nav-folder-title {
+    /* Using rem ensures the pill height scales with the text size */
+    border-radius: var(--m3-radius-full) !important;
+    margin-bottom: 0.2em;
+    padding: 0.3em 1.2em;
+}
+
+/* Ribbon (Far left icon bar) active state */
+.side-dock-ribbon-action {
+    border-radius: var(--m3-radius-xl);
+    padding: 0.5em;
+}
+
+.side-dock-ribbon-action.is-active {
+    background-color: var(--background-modifier-active-hover);
+    color: var(--text-accent);
+}
+
+.side-dock-ribbon-action.is-active:hover {
+    background-color: color-mix(in srgb, var(--md-primary) 27%, transparent);
+}
