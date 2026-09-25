@@ -1,10 +1,10 @@
 {
-	"id": "caelestia-test",
-	"name": "caelestia test plugin",
+	"id": "caelestia-obsidian",
+	"name": "Caelestia Obsidian",
 	"version": "1.0.0",
 	"minAppVersion": "1.8.7",
-	"description": "A simple plugin to get dynamic colours from .",
+	"description": "A simple plugin to sync theme in caelestia environment.",
 	"author": "that person",
-	"authorUrl": "https://obsidian.md",
+	"authorUrl": "https://github.com/sufficientpast/caelestia-obsidian",
 	"isDesktopOnly": true
 }

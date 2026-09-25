@@ -49,7 +49,6 @@ export default class ExternalStyleSettingTab extends PluginSettingTab {
 		try {
 			const home = process.env.HOME || os.homedir();
 
-			// 1. Resolve source preset file path relative to plugin folder
 			const adapter = this.app.vault.adapter;
 			const vaultBasePath =
 				'getBasePath' in adapter &&
@@ -64,16 +63,13 @@ export default class ExternalStyleSettingTab extends PluginSettingTab {
 				srcRelativePath,
 			);
 
-			// 2. Resolve destination path relative to user's home directory
 			const fullDestPath = destRelativePath.startsWith('/')
 				? destRelativePath
 				: path.join(home, destRelativePath);
 
-			// 3. Ensure destination parent directory exists
 			const destDir = path.dirname(fullDestPath);
 			await fs.promises.mkdir(destDir, { recursive: true });
 
-			// 4. Overwrite/Create the destination file
 			await fs.promises.copyFile(fullSrcPath, fullDestPath);
 			await this.createThemeFromTemplate();
 			return true;
@@ -182,7 +178,7 @@ export default class ExternalStyleSettingTab extends PluginSettingTab {
 					.setCta()
 					.onClick(() => {
 						window.open(
-							'https://github.com/your-username/your-repo-name',
+							'https://github.com/sufficientpast/caelestia-obsidian',
 							'_blank',
 						);
 					}),
