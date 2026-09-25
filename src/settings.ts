@@ -95,9 +95,7 @@ export default class ExternalStyleSettingTab extends PluginSettingTab {
 		const { containerEl } = this;
 		containerEl.empty();
 
-		new Setting(containerEl)
-			.setName('Caelestia Obsidian plugin')
-			.setHeading();
+		new Setting(containerEl).setName('Caelestia').setHeading();
 
 		let pathInputComponent: TextComponent | undefined;
 		let pathSettingEl: HTMLElement;
@@ -188,7 +186,7 @@ export default class ExternalStyleSettingTab extends PluginSettingTab {
 			cls: 'style-watcher-thankyou',
 		});
 		thankYouEl.createEl('p', {
-			text: 'BWAAAAAAAAAHHHH </3',
+			text: 'Bwaaaaaaaaahhhh </3',
 		});
 	}
 }
