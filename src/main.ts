@@ -27,19 +27,17 @@ export class MyCenteredModal extends Modal {
 
 		const button = contentEl.createEl('button', { text: 'Confirm' });
 		button.addEventListener('click', () => {
-			void this.settingsTab.absoluteOverwriteFile(
-				'presets/preset-1.css',
-				'.config/caelestia/templates/obsidian.css',
-			);
+			void (async () => {
+				await this.settingsTab.absoluteOverwriteFile(
+					'presets/preset-1.css',
+					'.config/caelestia/templates/obsidian.css',
+				);
 
-			try {
-				exec('/usr/bin/caelestia scheme set -n dynamic');
-				new Notice(`Output: Success`);
-			} catch (error) {
-				console.error('Command failed:', error);
-			}
+				exec('/usr/bin/caelestia scheme set -n dynamic', (err) => {
+					new Notice(err ? 'Failed to apply scheme' : 'Done!');
+				});
+			})();
 
-			new Notice('Done!');
 			this.close();
 		});
 	}
@@ -131,14 +129,14 @@ export default class ExternalStyleWatcher extends Plugin {
 			return;
 		}
 		try {
-			this.watcher = fs.watch(this.watchDir, (filename) => {
-				if (!filename || filename !== this.watchFile) return;
-
-				window.clearTimeout(this._debounce as number);
-				this._debounce = window.setTimeout(
-					() => this.refreshStyle(),
-					150,
-				);
+			this.watcher = fs.watch(this.watchDir, (eventType, filename) => {
+				if (!filename || filename === this.watchFile) {
+					window.clearTimeout(this._debounce as number);
+					this._debounce = window.setTimeout(
+						() => this.refreshStyle(),
+						150,
+					);
+				}
 			});
 
 			this.watcher.on('error', (e) => {
