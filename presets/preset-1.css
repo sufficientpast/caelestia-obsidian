@@ -1,6 +1,6 @@
 /* Pretending to be Material Theme */
 
-/* ---Color Vars-------------------------------------   */
+/* --- Color Variables ------------------------------------- */
 :root {
 	/* MD3 Core & Surfaces */
 	--md-background: #{{background.hex}};
@@ -145,14 +145,14 @@
 
 .theme-dark,
 .theme-light {
-	/* --Core Background Surfaces -------------------------------*/
+	/* Core Background Surfaces */
 	--background-primary: var(--md-background);
 	--background-primary-alt: var(--md-surfaceDim);
 	--background-secondary: var(--md-surfaceContainerLow);
 	--background-secondary-alt: var(--md-surfaceContainer);
 	--background-modifier-form-field: var(--md-surfaceContainerHigh);
 
-	/* --MD3 Surface Tonal Palette ------------------------------*/
+	/* MD3 Surface Tonal Palette */
 	--md-sys-color-surface: var(--md-surface);
 	--md-sys-color-surface-dim: var(--md-surfaceDim);
 	--md-sys-color-surface-bright: var(--md-surfaceBright);
@@ -166,33 +166,33 @@
 	--md-sys-color-outline: var(--md-outline);
 	--md-sys-color-outline-variant: var(--md-outlineVariant);
 
-	/* --Titlebar & Window Controls ----------------------------*/
+	/* Titlebar & Window Controls */
 	--titlebar-background: var(--md-surfaceContainerLow);
 	--titlebar-background-focused: var(--md-surfaceContainer);
 	--titlebar-text-color: var(--md-onSurface);
 	--titlebar-text-color-focused: var(--md-onSurface);
 
-	/* --Borders & Dividers ------------------------------------*/
+	/* Borders & Dividers */
 	--divider-color: var(--md-outlineVariant);
 	--background-modifier-border: var(--md-outlineVariant);
 	--background-modifier-border-focus: var(--md-primary);
 	--background-modifier-border-hover: var(--md-outline);
 
-	/* --Text Typography Colors --------------------------------*/
+	/* Text Typography Colors */
 	--text-normal: var(--md-onSurface);
 	--text-muted: var(--md-onSurfaceVariant);
 	--text-faint: var(--md-outline);
 	--text-on-accent: var(--md-onPrimary);
 	--text-selection: color-mix(in srgb, var(--md-primary) 30%, transparent);
 
-	/* --Accents & State Colors --------------------------------*/
+	/* Accents & State Colors */
 	--interactive-accent: var(--md-primary);
 	--interactive-accent-hover: var(--md-primaryContainer);
 	--interactive-accent-rgb: var(--md-primary);
 	--text-accent: var(--md-primary);
 	--text-accent-hover: var(--md-primaryContainer);
 
-	/* --Base Obsidian Gray/Scale Override ---------------------*/
+	/* Base Obsidian Gray/Scale Override */
 	--color-base-00: var(--md-background);
 	--color-base-05: var(--md-surfaceDim);
 	--color-base-10: var(--md-surfaceContainerLowest);
@@ -206,7 +206,7 @@
 	--color-base-70: var(--md-onSurface);
 	--color-base-100: var(--md-inverseSurface);
 
-	/* --Semantic Palette --------------------------------------*/
+	/* Semantic Palette */
 	--color-red: var(--md-error);
 	--color-orange: var(--md-tertiary);
 	--color-yellow: var(--md-secondary);
@@ -215,7 +215,7 @@
 	--color-blue: var(--md-primary);
 	--color-purple: var(--md-secondary);
 
-	/* --MD3 Elevational Shadows -------------------------------*/
+	/* MD3 Elevational Shadows */
 	--shadow-level-1:
 		0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
 	--shadow-level-2:
@@ -227,7 +227,7 @@
 	--shadow-level-5:
 		0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
 
-	/*Headings*/
+	/* Headings */
 	--h1-color: var(--md-primary);
 	--h2-color: var(--md-tertiary);
 	--h3-color: var(--md-secondary);
@@ -235,7 +235,7 @@
 	--h5-color: var(--md-onSurfaceVariant);
 	--h6-color: var(--md-outline);
 
-	/*Border Radius*/
+	/* Border Radius */
 	--radius-s: 4px;
 	--radius-m: 8px;
 	--radius-l: 12px;
@@ -243,14 +243,14 @@
 	--radius-2xl: 28px;
 	--radius-full: 9999px;
 
-	/*Easing transition*/
+	/* Easing transition */
 	--md-transition: all 200ms cubic-bezier(0.2, 0, 0, 1);
 
-	/*why do i have to state the obvious?*/
-	--dropdown-background: var(--md-primary);
-	--dropdown-background-hover: var(--md-tertiary);
+	/* Dropdowns */
+	--dropdown-background: var(--md-surfaceContainerHigh);
+	--dropdown-background-hover: var(--md-surfaceContainerHighest);
 
-	/*-Code Blocks & Syntax highlight */
+	/* Code Blocks & Syntax Highlight */
 	--code-background: var(--md-surfaceContainerLow);
 	--code-normal: var(--md-onSurface);
 	--code-comment: var(--md-onSurfaceVariant);
@@ -264,13 +264,14 @@
 	--code-tag: var(--md-error);
 	--code-value: var(--md-onSurface);
 
-	/*Canvas*/
+	/* Canvas */
 	--canvas-background: var(--md-surfaceContainer);
 	--canvas-card-label-color: var(--md-tertiary);
 	--canvas-dot-pattern: var(--md-onSurface);
 }
 
-/*App layout and navigation panel*/
+/* --- App Layout and Navigation Panel --- */
+
 /* Left Ribbon (Dock) */
 .side-dock-ribbon {
 	background-color: var(--md-surfaceContainerLow) !important;
@@ -309,9 +310,12 @@
 .nav-folder-title {
 	border-radius: var(--radius-full) !important;
 	margin-bottom: 2px !important;
-	padding: 6px 16px !important;
+	padding-top: 4px !important;
+	padding-bottom: 4px !important;
 	color: var(--md-onSurfaceVariant);
-	transition: var(--md-transition);
+	transition:
+		background-color 150ms ease,
+		color 150ms ease;
 }
 
 .nav-file-title:hover,
@@ -329,7 +333,6 @@
 	color: var(--md-onSecondaryContainer) !important;
 	font-weight: 600;
 }
-
 /* Workspace Tabs */
 .workspace-tab-header-container {
 	background-color: var(--md-surfaceContainerLow);
@@ -338,7 +341,7 @@
 
 .workspace-tab-header {
 	border-width: 0 !important;
-	border-radius: 0 0 0 0 !important;
+	border-radius: 0 !important;
 	transition: var(--md-transition);
 	color: var(--md-onSurfaceVariant);
 }
@@ -353,7 +356,7 @@
 	background-color: color-mix(in srgb, var(--md-onSurface) 6%, transparent);
 }
 
-/*editor and typography*/
+/* --- Editor & Typography --- */
 .markdown-source-view,
 .markdown-rendered {
 	background-color: var(--md-background);
@@ -364,7 +367,7 @@
 		sans-serif;
 }
 
-/* cursor & line highlight */
+/* Cursor & Line Highlight */
 .cm-cursor {
 	border-left-color: var(--md-primary) !important;
 	border-left-width: 2.5px !important;
@@ -411,7 +414,7 @@ a.tag,
 	font-weight: 500;
 }
 
-/* code blocks again*/
+/* Inline & Block Code */
 .markdown-rendered code,
 .cm-inline-code {
 	border-radius: var(--radius-s) !important;
@@ -427,7 +430,7 @@ a.tag,
 	box-shadow: var(--shadow-level-1) !important;
 }
 
-/* tasks & checkboxes */
+/* Tasks & Checkboxes */
 .contains-task-list input[type='checkbox'] {
 	appearance: none;
 	-webkit-appearance: none;
@@ -456,7 +459,7 @@ a.tag,
 	font-weight: bold;
 }
 
-/*modal ,popups,etc*/
+/* Modals & Popups */
 .modal {
 	background-color: var(--md-surfaceContainerHigh) !important;
 	border-radius: var(--radius-2xl) !important;
@@ -470,7 +473,7 @@ a.tag,
 	backdrop-filter: blur(4px);
 }
 
-/* quick switcher/command palette */
+/* Quick Switcher / Command Palette */
 .suggestion-item {
 	border-radius: var(--radius-full) !important;
 	padding: 10px 20px !important;
@@ -496,7 +499,7 @@ a.tag,
 	box-shadow: 0 0 0 2px color-mix(in srgb, var(--md-primary) 20%, transparent) !important;
 }
 
-/*Callouts*/
+/* Callouts */
 .callout {
 	border-radius: var(--radius-xl) !important;
 	border: 1px solid var(--md-outlineVariant) !important;
@@ -541,20 +544,24 @@ a.tag,
 }
 
 /* Buttons */
-button,
-.mod-cta {
+.modal button,
+button.mod-cta,
+.setting-item-control button:not(.checkbox-container) {
 	border-radius: var(--radius-full) !important;
 	padding: 8px 24px !important;
 	font-weight: 500 !important;
-	transition: var(--md-transition) !important;
+	transition:
+		background-color 200ms ease,
+		box-shadow 200ms ease !important;
 	border: none !important;
 	background-color: var(--md-primary) !important;
 	color: var(--md-onPrimary) !important;
 	box-shadow: var(--shadow-level-1);
 }
 
-button:hover,
-.mod-cta:hover {
+.modal button:hover,
+button.mod-cta:hover,
+.setting-item-control button:not(.checkbox-container):hover {
 	box-shadow: var(--shadow-level-2);
 	background-color: color-mix(
 		in srgb,
@@ -567,7 +574,7 @@ button:active {
 	box-shadow: var(--shadow-level-1);
 }
 
-/* toggle track & centered thumb */
+/* Toggle Track & Centered Thumb */
 .checkbox-container {
 	position: relative !important;
 	width: 44px !important;
@@ -589,9 +596,11 @@ button:active {
 
 /* OFF State Thumb */
 .checkbox-container .checkbox-thumb {
-	position: relative !important;
-	width: 12px !important;
-	height: 12px !important;
+	position: absolute !important;
+	top: 50% !important;
+	left: 2px !important;
+	width: 16px !important;
+	height: 16px !important;
 	border-radius: 50% !important;
 	background-color: var(--md-outline) !important;
 	transform: translateY(-50%) !important;
@@ -606,22 +615,22 @@ button:active {
 	transform: translate(20px, -50%) !important;
 }
 
-/*Canvas*/
+/* Canvas */
 .canvas-node {
-	border-radius: var(--radius-xl) !important;
+	border-radius: var(--radius-2xl) !important;
 	border: 1px solid var(--md-outlineVariant) !important;
 	box-shadow: var(--shadow-level-2) !important;
 }
 
 .canvas-node-content {
-	border-radius: var(--radius-l) !important;
+	border-radius: var(--radius-2xl) !important;
 }
 
 .graph-view-wrapper {
 	background-color: var(--md-background);
 }
 
-/*Status bar*/
+/* Status Bar */
 .status-bar {
 	background-color: var(--md-surfaceContainerLow) !important;
 	border-top: 1px solid var(--md-outlineVariant) !important;
@@ -630,7 +639,7 @@ button:active {
 	border-radius: var(--radius-l) var(--radius-l) 0 0;
 }
 
-/* modal layout reset??? */
+/* --- Settings Modal Layout --- */
 .modal.mod-settings {
 	padding: 0 !important;
 	border-radius: var(--radius-2xl) !important;
@@ -743,7 +752,7 @@ button:active {
 .setting-item-control input[type='search'],
 .setting-item-control input[type='number'],
 .setting-item-control select.dropdown {
-	background-color: var(--md-tertiary) !important;
+	background-color: var(--md-surfaceContainerHigh) !important;
 	border: 1px solid var(--md-outline) !important;
 	color: var(--md-onSurface) !important;
 	border-radius: var(--radius-xl) !important;
@@ -771,4 +780,193 @@ button:active {
 /* Slider Bar Tweaks */
 .setting-item-control input[type='range'] {
 	accent-color: var(--md-primary) !important;
+}
+
+/* Note Properties Drawer */
+.metadata-container {
+	background-color: var(--md-surfaceContainerLow);
+	border: 1px solid var(--md-outlineVariant);
+	border-radius: var(--radius-xl);
+	padding: 12px 16px;
+	margin-bottom: 24px;
+}
+
+.metadata-property {
+	border-radius: var(--radius-m);
+	transition: var(--md-transition);
+}
+
+.metadata-property:hover {
+	background-color: color-mix(in srgb, var(--md-onSurface) 4%, transparent);
+}
+
+.metadata-property-key {
+	color: var(--md-onSurfaceVariant);
+	font-size: 0.82rem;
+	font-weight: 500;
+}
+
+.metadata-property-value {
+	color: var(--md-onSurface);
+}
+
+.metadata-add-button {
+	color: var(--md-primary);
+	border-radius: var(--radius-full);
+}
+
+/* --- Tables, Blockquotes & Formatted Elements --- */
+
+/* 1. Tables (Live Preview + Reading View) */
+.markdown-rendered table,
+.markdown-source-view .cm-table-widget,
+.markdown-source-view table {
+	border-collapse: separate !important;
+	border-spacing: 0 !important;
+	border: 1px solid var(--md-outlineVariant) !important;
+	border-radius: var(--radius-l) !important;
+	overflow: hidden !important;
+	width: 100% !important;
+	margin: 16px 0 !important;
+}
+
+.markdown-rendered th,
+.markdown-source-view th {
+	background-color: var(--md-surfaceContainer) !important;
+	color: var(--md-onSurface) !important;
+	font-weight: 600 !important;
+	border-bottom: 1px solid var(--md-outlineVariant) !important;
+	padding: 10px 16px !important;
+}
+
+.markdown-rendered td,
+.markdown-source-view td {
+	border-bottom: 1px solid var(--md-outlineVariant) !important;
+	padding: 10px 16px !important;
+	color: var(--md-onSurface) !important;
+}
+
+.markdown-rendered tr:nth-child(even),
+.markdown-source-view tr:nth-child(even) {
+	background-color: color-mix(
+		in srgb,
+		var(--md-onSurface) 2%,
+		transparent
+	) !important;
+}
+
+/* 2. Blockquotes (Reading View & Live Preview) */
+.markdown-rendered blockquote,
+.markdown-source-view .HyperMD-quote {
+	border-left: 4px solid var(--md-primary) !important;
+	background-color: var(--md-surfaceContainerLow) !important;
+	border-radius: 0 var(--radius-m) var(--radius-m) 0 !important;
+	padding: 12px 18px !important;
+	margin: 16px 0 !important;
+	color: var(--md-onSurfaceVariant) !important;
+}
+
+/* 3. Highlighted Text (==text==) */
+.markdown-rendered mark,
+.cm-highlight,
+.markdown-source-view .cm-highlight {
+	background-color: var(--md-tertiaryContainer) !important;
+	color: var(--md-onTertiaryContainer) !important;
+	border-radius: var(--radius-s) !important;
+	padding: 1px 4px !important;
+}
+
+/* 4. Horizontal Rules (---) */
+.markdown-rendered hr,
+.markdown-source-view .cm-hr-embed,
+.markdown-source-view .HyperMD-hr {
+	border: none !important;
+	border-top: 1px solid var(--md-outlineVariant) !important;
+	margin: 24px 0 !important;
+}
+
+/* Custom Rounded MD3 Scrollbars */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--md-outlineVariant);
+	border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--md-outline);
+}
+
+/* Floating Action Button (FAB) style for New Note in Ribbon */
+.side-dock-actions {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding: 8px 0;
+}
+
+.side-dock-ribbon-action[aria-label='Create new note'] {
+	background-color: var(--md-primaryContainer) !important;
+	color: var(--md-onPrimaryContainer) !important;
+	border-radius: var(--radius-xl) !important;
+	box-shadow: var(--shadow-level-2);
+}
+
+.side-dock-ribbon-action[aria-label='Create new note']:hover {
+	box-shadow: var(--shadow-level-3);
+	background-color: color-mix(
+		in srgb,
+		var(--md-primaryContainer) 90%,
+		black
+	) !important;
+}
+
+/* Note Embeds / Transclusions */
+.markdown-rendered .markdown-embed,
+.markdown-source-view .cm-embed-block {
+	border: 0 solid var(--md-outlineVariant) !important;
+	border-radius: var(--radius-l) !important;
+	padding: 12px 16px !important;
+	margin: 16px 0 !important;
+}
+
+/* --- Destructive & Delete Confirmation Buttons --- */
+button.mod-warning,
+button.mod-destructive,
+.button.mod-warning,
+.button.mod-destructive,
+.is-destructive,
+.modal button.mod-warning,
+.modal button.mod-destructive,
+.setting-item-control button.mod-warning {
+	background-color: var(--md-error) !important;
+	color: var(--md-onError) !important;
+	box-shadow: var(--shadow-level-1) !important;
+}
+
+/* Hover & Focus States */
+button.mod-warning:hover,
+button.mod-destructive:hover,
+.button.mod-warning:hover,
+.button.mod-destructive:hover,
+.is-destructive:hover,
+.modal button.mod-warning:hover,
+.modal button.mod-destructive:hover {
+	background-color: color-mix(in srgb, var(--md-error) 85%, black) !important;
+	color: var(--md-onError) !important;
+	box-shadow: var(--shadow-level-2) !important;
+}
+
+/* Pressed State */
+button.mod-warning:active,
+button.mod-destructive:active,
+.is-destructive:active {
+	box-shadow: var(--shadow-level-1) !important;
 }
