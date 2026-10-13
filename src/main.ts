@@ -66,7 +66,8 @@ export default class ExternalStyleWatcher extends Plugin {
 		this.settingsTab = new ExternalStyleSettingTab(this.app, this);
 		this.addSettingTab(this.settingsTab);
 
-		this.addRibbonIcon('dice', 'Print to console', async () => {
+		//TODO: remove this after v1
+		this.addRibbonIcon('dice', 'Regenerate CSS file', async () => {
 			await this.settingsTab.absoluteOverwriteFile(
 				'presets/preset-1.css',
 				'.config/caelestia/templates/obsidian.css',
@@ -188,10 +189,8 @@ export default class ExternalStyleWatcher extends Plugin {
 			},
 			(btn) => {
 				btn.addEventListener('click', () => {
-					// Perform your action here
 					new MyCenteredModal(this.app, this.settingsTab).open();
 
-					// Manually dismiss the notice
 					notice.hide();
 				});
 			},
@@ -232,7 +231,6 @@ export default class ExternalStyleWatcher extends Plugin {
 			}
 
 			styleEl.textContent = cssContent;
-			//console.log('External Style Updated!'); for testing only
 		} catch (e) {
 			console.error(
 				'Failed to read external style file:',

@@ -1,6 +1,6 @@
 # Caelestia Obsidian
 
-A simple obsidian plugin that let's you switch between different dynamic theme that syncs with your [**caelestia**](https://github.com/caelestia-dots/shell) setup.
+A simple obsidian plugin that let's you switch between different dynamic theme that syncs with your [**Caelestia**](https://github.com/caelestia-dots/shell) setup.
 
 > [!CAUTION]
 > This project is still under development.
@@ -8,14 +8,22 @@ A simple obsidian plugin that let's you switch between different dynamic theme t
 ## Installation
 
 Install the latest zip/tar.gz file from [release](https://github.com/sufficientpast/caelestia-obsidian/releases)
-and unzip it in your obsidian vault's plugin directory.
+and unzip it in your Obsidian Vault's plugin directory.
 
-```fish
+### For .zip
+
+```sh
 bsdtar -xf caelestia-plugin.zip -C /absolute/path/to/vault/.obsidian/plugins/
 ```
 
+### For .tar.gz
+
+```sh
+tar -xzf caelestia-plugin.tar.gz -C /absolute/path/to/vault/.obsidian/plugins/
+```
+
 > [!NOTE]
-> There are no plans as of now for this plugin to be in Obsidian's Community plugin list.
+> As of now, there are no plans for this plugin to be in Obsidian's Community plugin list.
 
 ## Local Development
 

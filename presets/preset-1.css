@@ -885,25 +885,6 @@ button:active {
 	margin: 24px 0 !important;
 }
 
-/* Custom Rounded MD3 Scrollbars */
-::-webkit-scrollbar {
-	width: 8px;
-	height: 8px;
-}
-
-::-webkit-scrollbar-track {
-	background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-	background-color: var(--md-outlineVariant);
-	border-radius: var(--radius-full);
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background-color: var(--md-outline);
-}
-
 /* Floating Action Button (FAB) style for New Note in Ribbon */
 .side-dock-actions {
 	display: flex;
@@ -969,4 +950,16 @@ button.mod-warning:active,
 button.mod-destructive:active,
 .is-destructive:active {
 	box-shadow: var(--shadow-level-1) !important;
+}
+
+/*Workspace Tab*/
+.workspace-tab-header {
+	--tab-radius: 0px;
+	--tab-radius-active: 0px;
+	--tab-border-width: 0px;
+	--tab-outline-width: 0px;
+	--tab-margin: 0px;
+	--tab-background: transparent;
+	--tab-shadow: none;
+	--tab-box-shadow: none;
 }
