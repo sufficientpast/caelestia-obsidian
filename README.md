@@ -13,13 +13,13 @@ and unzip it in your Obsidian Vault's plugin directory.
 ### For .zip
 
 ```sh
-bsdtar -xf caelestia-plugin.zip -C /absolute/path/to/vault/.obsidian/plugins/
+bsdtar -xf caelestia-obsidian-latest.zip -C /absolute/path/to/vault/.obsidian/plugins/
 ```
 
 ### For .tar.gz
 
 ```sh
-tar -xzf caelestia-plugin.tar.gz -C /absolute/path/to/vault/.obsidian/plugins/
+tar -xzf caelestia-obsidian-latest.tar.gz -C /absolute/path/to/vault/.obsidian/plugins/
 ```
 
 > [!NOTE]
