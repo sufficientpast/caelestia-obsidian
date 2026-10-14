@@ -7,16 +7,24 @@ A simple obsidian plugin that let's you switch between different dynamic theme t
 
 ## Installation
 
+```sh
+curl -fsSL https://raw.githubusercontent.com/sufficientpast/caelestia-obsidian/main/install.fish | fish
+```
+
+> You should not run random scripts from the internet though.
+
+### Manual Installation
+
 Install the latest zip/tar.gz file from [release](https://github.com/sufficientpast/caelestia-obsidian/releases)
 and unzip it in your Obsidian Vault's plugin directory.
 
-### For .zip
+#### For .zip
 
 ```sh
 bsdtar -xf caelestia-obsidian-latest.zip -C /absolute/path/to/vault/.obsidian/plugins/
 ```
 
-### For .tar.gz
+#### For .tar.gz
 
 ```sh
 tar -xzf caelestia-obsidian-latest.tar.gz -C /absolute/path/to/vault/.obsidian/plugins/
